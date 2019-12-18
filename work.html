@@ -8,9 +8,45 @@
     <title>
         Вакансии
     </title>
-<link href="main.css?0709f0521751d17b078d" rel="stylesheet"></head>
+<link href="main.css?3db822b7b5b715a4cead" rel="stylesheet"></head>
 
 <body>
+    <div class="popup-form__border flex justify-center items-center mfp-hide m-auto" id="popup-quest">
+        <div class="request-form__popup bg-white flex flex-col items-center justify-center p-8 m-4 w-full">
+            <div class="request-form__inner w-full">
+                <div class="request-form__input border-gray-800 border-solid border rounded px-3 py-4 text-base my-4">
+                    <input class="w-full outline-none" type="text" name="user_name" placeholder="Как вас зовут">
+                </div>
+                <div class="request-form__input border-gray-800 border-solid border rounded px-3 py-4 text-base my-4">
+                    <input class="w-full outline-none" type="text" name="user_email" placeholder="Ваш e-mail">
+                </div>
+                <div class="request-form__input border-gray-800 border-solid border rounded px-3 py-4 text-base my-4">
+                    <input class="w-full outline-none" type="text" name="user_phone" placeholder="Ваш телефон">
+                </div>
+                <div class="request-form__input border-gray-800 border-solid border rounded px-3 py-4 text-base my-4">
+                    <textarea class="w-full outline-none" placeholder="Количество, тип знаков, ваши пожелания"></textarea>
+                </div>
+            </div>
+            <button class="purple-btn rounded-full text-white text-sm font-medium uppercase cursor-pointer flex justify-center items-center px-3 py-2 my-4">
+                <i class="far fa-envelope-open p-2"></i> задать свой вопрос
+        </button>
+        </div>
+    </div>
+    <div class="popup-form__border flex justify-center items-center mfp-hide m-auto " id="popup-call">
+        <div class="request-form__popup bg-white flex flex-col items-center justify-center p-8 m-4 w-full">
+            <div class="request-form__inner w-full">
+                <div class="request-form__input border-gray-800 border-solid border rounded px-3 py-4 text-base my-4">
+                    <input class="w-full outline-none" type="text" name="user_name" placeholder="Как вас зовут">
+                </div>
+                <div class="request-form__input border-gray-800 border-solid border rounded px-3 py-4 text-base my-4">
+                    <input class="w-full outline-none" type="text" name="user_phone" placeholder="Ваш телефон">
+                </div>
+            </div>
+            <button class="purple-btn rounded-full text-white text-sm font-medium uppercase cursor-pointer flex justify-center items-center px-3 py-2 my-4">
+                <i class="fas fa-phone-alt p-2"></i> заказать звонок
+        </button>
+        </div>
+    </div>
     <div class="burger-full">
         <div class="container">
             <div class="flex flex-wrap flex-col items-start w-full">
@@ -33,22 +69,20 @@
                 </ul>
             </div>
             <div class="flex flex-col justify-start py-6">
-                <div class="block leading-none">
-                    <div class="flex flex-col justify-start flex-wrap">
-                        <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl">8 (800) 800 80 80</a>
-                        <div class="call-inner font-normal text-sm underline">Санкт-Петербург</div>
-                    </div>
-                    <div class="flex flex-col justify-start flex-wrap">
-                        <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl">8 (800) 800 80 80</a>
-                        <div class="call-inner font-normal text-sm underline">Звонки по всей России бесплатные</div>
-                    </div>
+                <div class="flex flex-col justify-start flex-wrap">
+                    <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl">8 (800) 800 80 80</a>
+                    <div class="call-inner font-normal text-sm underline">Санкт-Петербург</div>
+                </div>
+                <div class="flex flex-col justify-start flex-wrap">
+                    <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl">8 (800) 800 80 80</a>
+                    <div class="call-inner font-normal text-sm underline">Звонки по всей России бесплатные</div>
                 </div>
             </div>
         </div>
     </div>
     <header class="container fixed lg:relative bg-white z-10">
         <div class="flex justify-between items-center lg:items-start py-4 lg:py-0">
-            <div class="flex justify-start lg:justify-between w-1/3 lg:w-7/12">
+            <div class="flex justify-start lg:justify-between w-1/3 lg:w-1/2 xl:w-7/12">
                 <div class="close lg:hidden">
                     <div class="close-line"></div>
                 </div>
@@ -60,30 +94,30 @@
                 </div>
                 <ul class="hidden lg:flex w-full my-nav justify-between items-center px-3">
                     <li>
-                        <a href="index.html" class="text-sm text-black font-bold hover:text-gray-700 py-3 uppercase" title="главная">главная</a>
+                        <a href="index.html" class="text-sm font-bold text-black py-3 uppercase" title="главная">главная</a>
                     </li>
                     <li>
-                        <a href="./gallery.html" class="text-sm text-black font-bold hover:text-gray-700 py-3 uppercase" title="фотогалерея">фотогалерея</a>
+                        <a href="./gallery.html" class="text-sm font-bold gray-text py-3 uppercase" title="фотогалерея">фотогалерея</a>
                     </li>
                     <li>
-                        <a href="./sale.html" class="text-sm text-black font-bold hover:text-gray-700 py-3 uppercase" title="ации">акции</a>
+                        <a href="./sale.html" class="text-sm font-bold gray-text py-3 uppercase" title="ации">акции</a>
                     </li>
                     <li>
-                        <a href="./work.html" class="text-sm text-black font-bold hover:text-gray-700 py-3 uppercase" title="вакансии">вакансии</a>
+                        <a href="./work.html" class="text-sm font-bold gray-text py-3 uppercase" title="вакансии">вакансии</a>
                     </li>
                     <li>
-                        <a href="./contact.html" class="text-sm text-black font-bold hover:text-gray-700 py-3 uppercase" title="контакты">контакты</a>
+                        <a href="./contact.html" class="text-sm font-bold gray-text py-3 uppercase" title="контакты">контакты</a>
                     </li>
                 </ul>
-                <div class="call-check hidden lg:flex flex-wrap px-6 py-4 uppercase text-sm text-white font-bold">обработка звонков и заявок 24/7</div>
+                <div class="call-check hidden xl:flex flex-wrap px-6 py-4 uppercase text-sm text-white font-bold">обработка звонков и заявок 24/7</div>
             </div>
             <div class="flex justify-center w-1/3 lg:hidden">
-                <div class="">
-                    <img class="header-logo w-full h-auto" src='images/989f481ff516ff1c9745187801eace7a.png' />
+                <div class="header-logo">
+                    <img class="w-full h-auto" src='images/989f481ff516ff1c9745187801eace7a.png' />
                 </div>
             </div>
-            <div class="flex justify-end lg:justify-between w-1/3 lg:w-5/12">
-                <div class="hidden lg:block w-1/2 leading-none px-3">
+            <div class="flex justify-end lg:justify-around  w-1/3 lg:w-1/2 xl:w-5/12">
+                <div class="hidden lg:block w-1/2 leading-none">
                     <div class="flex justify-end flex-wrap">
                         <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl">8 (800) 800 80 80</a>
                         <div class="call-inner font-normal text-sm underline">Санкт-Петербург</div>
@@ -94,10 +128,22 @@
                     </div>
                 </div>
                 <div class="">
-                    <button class="purple-btn rounded-full text-white text-sm font-medium uppercase cursor-pointer flex justify-center items-center px-3 py-2 hover:">
+                    <a href="#popup-call" class="popup-call">
+                        <button class="purple-btn rounded-full text-white text-sm font-normal uppercase cursor-pointer flex justify-center items-center px-3 py-2 lg:py-1 mb-2">
                             <i class="fas fa-phone-alt px-1 py-2 lg:pr-2"></i>
                             <div class="hidden lg:flex">мы вам перезвоним</div>
                         </button>
+                    </a>
+                    <a href="#popup-quest" class="hidden lg:block popup-quest">
+                        <div class="cursor-pointer btn flex justify-start items-center">
+                            <div class="btn-circle text-white text-center">
+                                <i class="far fa-envelope-open px-3 py-2"></i>
+                            </div>
+                            <div class="btn-text w-full text-center px-3 py-1">
+                                задать вопрос
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -106,37 +152,45 @@
         <div class="container">
             <div class="flex justify-start hidden lg:block">
                 <div class="logo-block">
-                    <img class="header-logo w-full h-auto" src='images/989f481ff516ff1c9745187801eace7a.png' />
+                    <img class=" w-full h-auto" src='images/989f481ff516ff1c9745187801eace7a.png' />
+                </div>
+                <div class="way py-6">
+                    <a href="index.html">
+                        <button class="orange-btn">Главная</button>
+                    </a>
+                    <a href="./work.html">
+                        <button class="orange-btn">вакансии</button>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="flex flex-col items-center py-10 pt-32 lg:pt-0">
+        <div class="flex flex-col items-center py-10 pt-24 lg:pt-0">
             <div class="flex flex-col justify-center">
-                <div class="uppercase text-4xl text-black font-bold py-10">работа в нашей компании</div>
+                <div class="uppercase text-4xl text-black font-black py-10">работа в нашей компании</div>
             </div>
             <div class="w-full flex flex-wrap">
-                <div class="w-full md:w-1/2 flex flex-wrap justify-start md:pr-8">
-                    <div class="text-base text-black font-bold">
+                <div class="w-full md:w-1/2 flex flex-col md:pr-8">
+                    <div class="text-base text-black font-normal leading-none pb-6">
                         Главная ценность нашей компании – это сотрудники. Компания гордится тем, что многие руководители высшего и среднего звена начинали свой трудовой путь в компании с рядовых специальностей – водителей, операторов и логистов. Развитие нашей компании способствует
                         созданию новых рабочих мест и успешному карьерному росту сотрудников.
                     </div>
-                    <div class="text-base text-black font-bold">
+                    <div class="text-base text-black font-normal leading-none pb-6">
                         У нас развита корпоративная культура. Конкурсы, спортивные соревнования, праздники, возможность бесплатного посещения лучших театральных постановок, выставок и концертов – это неотъемлемая часть жизни коллектива.
                     </div>
                 </div>
                 <div class="w-full md:w-1/2 rounded">
-                    <img class="header-logo w-full h-auto" src='images/9b08fceb83e1d3eaf282aaef4f412541.png' />
+                    <img class=" w-full h-auto" src='images/9b08fceb83e1d3eaf282aaef4f412541.png' />
                 </div>
             </div>
         </div>
     </section>
     <section class="container">
-        <div class="sale-container">
-            <a href="#" class="sale-block sale-block__inner my-8 w-full">
-                <div class="flex flex-col md:flex-row justify-center items-center h-full p-8">
+        <div class="sale-block__border w-full mt-4 mb-24">
+            <a href="#" class="sale-block">
+                <div class="sale-block__inner md:flex-row m-4 lg:mx-24 lg:my-8">
                     <div class="feature-card flex justify-start items-center">
-                        <div class="feature-icon m-6 hidden sm:flex justify-center items-center">
-                            <img class="header-logo w-full h-auto" src='images/6d05ffe171f441415fe03941e51c0111.png' />
+                        <div class="feature-icon m-6 flex justify-center items-center">
+                            <img class=" w-full h-auto" src='images/6d05ffe171f441415fe03941e51c0111.png' />
                         </div>
                         <div class="flex flex-col flex-wrap">
                             <h1 class="text-xl font-bold text-white uppercase">оптимальные варианты</h1>
@@ -144,8 +198,8 @@
                         </div>
                     </div>
                     <div class="feature-card flex justify-start items-center py-8">
-                        <div class="feature-icon m-6 hidden sm:flex justify-center items-center">
-                            <img class="header-logo w-full h-auto" src='images/d40938cb770c2fc5f4dc4ce2d2b2a2dc.png' />
+                        <div class="feature-icon m-6 flex justify-center items-center">
+                            <img class=" w-full h-auto" src='images/d40938cb770c2fc5f4dc4ce2d2b2a2dc.png' />
                         </div>
                         <div class="flex flex-col flex-wrap">
                             <h1 class="text-xl font-bold text-white uppercase">оптимальные варианты</h1>
@@ -153,8 +207,8 @@
                         </div>
                     </div>
                     <div class="feature-card flex justify-start items-center">
-                        <div class="feature-icon m-6 hidden sm:flex justify-center items-center">
-                            <img class="header-logo w-full h-auto" src='images/c7a891a6e57977e812127a6dcee1f7e1.png' />
+                        <div class="feature-icon m-6 flex justify-center items-center">
+                            <img class=" w-full h-auto" src='images/c7a891a6e57977e812127a6dcee1f7e1.png' />
                         </div>
                         <div class="flex flex-col flex-wrap">
                             <h1 class="text-xl font-bold text-white uppercase">оптимальные варианты</h1>
@@ -168,45 +222,53 @@
     <section class="container">
         <div class="flex flex-col items-center py-10">
             <div class="flex flex-col items-center">
-                <div class="uppercase text-4xl text-black font-bold">наши вакансии</div>
+                <div class="uppercase text-4xl text-black font-black">наши вакансии</div>
             </div>
         </div>
         <div class="w-full flex justify-center">
             <div class="work-title">
-                <div class="text-black flex flex-col justify-start">
+                <div class="w-full md:w-1/2 text-black text-center md:text-left p-4 sm:p-6 md:px-10 lg:px-16">
                     <div class="text-xl font-normal">Уровень зарплаты</div>
                     <div class="text-2xl uppercase font-bold">от 120 000 рублей</div>
                 </div>
-                <div class="text-black flex flex-col justify-start">
+                <div class="w-full md:w-1/2 text-black text-center md:text-left p-4 sm:p-6 md:px-10 lg:px-16">
                     <div class="text-xl font-normal">Требуемый опыт работы</div>
                     <div class="text-2xl uppercase font-bold">не требуется</div>
                 </div>
             </div>
         </div>
-        <div class="flex flex-wrap justify-center items-center w-full">
-            <div class="flex justify-center w-full sm:w-2/4 lg:w-1/3 py-12">
-                <div class="sign">
-                    <img class="sign-img w-full h-full" src='images/e54b41ad4273c20be774387a11fe7363.png' />
-                    <div class="sign-inner text-xl text-black uppercase font-bold">
-                        на самостоятельных опорах
+        <div class="flex flex-wrap justify-center items-center w-full py-10">
+            <div class="flex justify-center w-full sm:w-2/4 lg:w-1/3 p-6">
+                <div class="block">
+                    <div class="block__img">
+                        <img class="w-full h-full object-cover" src='images/e6da382a89a4e1082895cf3e72e0dd37.png' />
                     </div>
-                    <div class="sign-hover flex justify-center items-center">
-                        <button class="purple-btn rounded-full text-white text-sm font-medium uppercase cursor-pointer flex justify-center items-center px-10 py-2 my-4">
+                    <div class="block-inner flex justify-center items-center h-full w-full">
+                        <button class="purple-btn rounded-full text-white text-sm font-medium uppercase cursor-pointer flex justify-center items-center px-4 sm:px-10 py-2 my-4">
                         узнать подробнее
-                    </button>
+                        </button>
+                    </div>
+                    <div class="block-inner__hover">
+                        <div class="block-inner__text">
+                            на столбах
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center w-full lg:w-1/3 py-12">
-                <div class="sign">
-                    <img class="sign-img w-full h-full" src='images/85b35a08cf47843bed08f8269532bdeb.png' />
-                    <div class="sign-inner text-xl text-black uppercase font-bold">
-                        на фасаде
+            <div class="flex justify-center w-full sm:w-2/4 lg:w-1/3 p-6">
+                <div class="block">
+                    <div class="block__img">
+                        <img class="w-full h-full object-cover" src='images/e6da382a89a4e1082895cf3e72e0dd37.png' />
                     </div>
-                    <div class="sign-hover flex justify-center items-center">
-                        <button class="purple-btn rounded-full text-white text-sm font-medium uppercase cursor-pointer flex justify-center items-center px-10 py-2 my-4">
+                    <div class="block-inner flex justify-center items-center h-full w-full">
+                        <button class="purple-btn rounded-full text-white text-sm font-medium uppercase cursor-pointer flex justify-center items-center px-4 sm:px-10 py-2 my-4">
                         узнать подробнее
-                    </button>
+                        </button>
+                    </div>
+                    <div class="block-inner__hover">
+                        <div class="block-inner__text">
+                            на столбах
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,7 +276,7 @@
         <!-- <div class="flex flex-wrap justify-center items-center w-full pb-40">
             <div class="p-8">
                 <div class="sign">
-                    <img class="header-logo w-full h-auto" src='images/e54b41ad4273c20be774387a11fe7363.png' />
+                    <img class=" w-full h-auto" src='images/e54b41ad4273c20be774387a11fe7363.png' />
                     <div class="sign-inner text-xl text-black uppercase font-bold">
                         на самостоятельных опорах
                     </div>
@@ -227,7 +289,7 @@
             </div>
             <div class="p-8">
                 <div class="sign">
-                    <img class="header-logo w-full h-auto" src='images/e6da382a89a4e1082895cf3e72e0dd37.png' />
+                    <img class=" w-full h-auto" src='images/e6da382a89a4e1082895cf3e72e0dd37.png' />
                     <div class="sign-inner text-xl text-black uppercase font-bold">
                         на придорожных столбах
                     </div>
@@ -244,7 +306,7 @@
         <div class="container">
             <div class="flex flex-col py-12">
                 <div class="flex flex-wrap justify-around items-start w-full">
-                    <div class="w-full sm:w-1/2 lg:w-1/5 text-base text-black flex flex-col justify-start">
+                    <div class="w-full sm:w-1/2 lg:w-1/5 text-base font-medium text-black flex flex-col justify-start">
                         <div class="text-2xl pb-4">
                             Страницы:
                         </div>
@@ -257,33 +319,33 @@
                             <li class="pb-3 hover:underline"><a href="#">Контакты</a></li>
                         </ul>
                     </div>
-                    <div class="w-full sm:w-1/2 lg:w-1/5 text-base font-bold text-black flex flex-col justify-start">
+                    <div class="w-full sm:w-1/2 lg:w-1/5 text-base font-medium text-black flex flex-col justify-start">
                         <div class="text-2xl pb-6">
                             Наши проекты:
                         </div>
                         <ul class="flex flex-col justify-start">
-                            <li class="pb-3"><a href="#">Рекламанарадио.рф</a></li>
-                            <li class="pb-3"><a href="#">Рекламанащитах.рф</a></li>
-                            <li class="pb-3"><a href="#">Рекламавметро.рф</a></li>
-                            <li class="pb-3"><a href="#">Dooh.ru</a></li>
+                            <li class="pb-3 hover:underline"><a href="#">Рекламанарадио.рф</a></li>
+                            <li class="pb-3 hover:underline"><a href="#">Рекламанащитах.рф</a></li>
+                            <li class="pb-3 hover:underline"><a href="#">Рекламавметро.рф</a></li>
+                            <li class="pb-3 hover:underline"><a href="#">Dooh.ru</a></li>
                         </ul>
                     </div>
-                    <div class="w-full sm:w-1/2 lg:w-2/5 text-base font-bold text-black">
-                        <div class="firm-license lg:mx-8 flex flex-col items-start lg:items-center">
+                    <div class="w-full sm:w-1/2 lg:w-2/5 text-base font-bold text-black flex lg:justify-end">
+                        <div class="firm-license lg:mx-10 flex flex-col items-start lg:items-center">
                             <div class="text-2xl pb-4 text-center">
                                 РекламаНаТранспорте
                             </div>
                             <div class="flex justify-center items-center">
-                                <div class="firm-license__icon purple-btn">
+                                <div class="firm-license__icon purple-btn mr-2 sm:mx-1 my-4">
                                     <a href="#"><i class="fab fa-vk"></i></a>
                                 </div>
-                                <div class="firm-license__icon purple-btn">
+                                <div class="firm-license__icon purple-btn mr-2 sm:mx-1 my-4">
                                     <a href="#"><i class="fab fa-facebook"></i></a>
                                 </div>
-                                <div class="firm-license__icon purple-btn">
+                                <div class="firm-license__icon purple-btn mr-2 sm:mx-1 my-4">
                                     <a href="#"><i class="fab fa-odnoklassniki"></i></a>
                                 </div>
-                                <div class="firm-license__icon purple-btn">
+                                <div class="firm-license__icon purple-btn mr-2 sm:mx-1 my-4">
                                     <a href="#"><i class="fab fa-instagram"></i></a>
                                 </div>
                             </div>
@@ -296,52 +358,52 @@
                         <div class="text-2xl pb-6">
                             Связаться с нами:
                         </div>
-                        <div class="flex flex-col leading-none pb-3">
-                            <div class="flex flex-col justify-end flex-wrap">
-                                <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl">8 (800) 800 80 80</a>
-                                <div class="font-normal text-sm font-bold">Санкт-Петербург</div>
+                        <div class="flex flex-col pb-3">
+                            <div class="flex flex-col justify-end flex-wrap leading-none pb-3">
+                                <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl hover-content">8 (800) 800 80 80</a>
+                                <div class="font-normal text-sm">Санкт-Петербург</div>
                             </div>
-                            <div class="flex flex-col justify-end flex-wrap">
-                                <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl">8 (800) 800 80 80</a>
-                                <div class="font-normal text-sm font-bold">Звонки по всей России бесплатные</div>
-                                <a href="mailto:info.dooh.ru" class="font-normal text-xl font-bold">info.dooh.ru</a>
+                            <div class="flex flex-col justify-end flex-wrap leading-none">
+                                <a href="tel:8 (800) 800 80 80" title="8 (800) 800 80 80" class="font-light text-black text-3xl hover-content">8 (800) 800 80 80</a>
+                                <div class="font-normal text-sm">Звонки по всей России бесплатные</div>
+                                <a href="mailto:info.dooh.ru" class="font-normal text-xl hover-content">info@dooh.ru</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="flex justify-start lg:justify-center items-start w-full flex-wrap">
-                    <div class="font-base text-black flex md:flex-col w-full sm:w-auto justify-start">
-                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm p-2">
+                    <div class="font-base text-black flex flex-col w-full sm:w-1/2 md:w-auto justify-start">
+                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm pr-2 py-2">
                             <div class="font-light font-bold">Работа в нашей команде:</div>
-                            <a href="mailto:info.dooh.ru" class="font-normal font-bold">info.dooh.ru</a>
+                            <a href="mailto:info.dooh.ru" class="font-normal font-bold hover-content">info@dooh.ru</a>
                         </div>
-                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm p-2">
+                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm pr-2 py-2">
                             <div class="font-light font-bold">Стать поставщиком:</div>
-                            <a href="mailto:info.dooh.ru" class="font-normal font-bold">info.dooh.ru</a>
+                            <a href="mailto:info.dooh.ru" class="font-normal font-bold hover-content">info@dooh.ru</a>
                         </div>
                     </div>
-                    <div class="font-base text-black flex md:flex-col w-full sm:w-auto justify-start">
-                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm p-2">
+                    <div class="font-base text-black flex flex-col w-full sm:w-1/2 md:w-auto justify-start">
+                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm pr-2 py-2">
                             <div class="font-light font-bold">Пригласить в тендер:</div>
-                            <a href="mailto:info.dooh.ru" class="font-normal font-bold">info.dooh.ru</a>
+                            <a href="mailto:info.dooh.ru" class="font-normal font-bold hover-content">info@dooh.ru</a>
                         </div>
-                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm p-2">
+                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm pr-2 py-2">
                             <div class="font-light font-bold">Партнерская программа:</div>
-                            <a href="mailto:info.dooh.ru" class="font-normal font-bold">info.dooh.ru</a>
+                            <a href="mailto:info.dooh.ru" class="font-normal font-bold hover-content">info@dooh.ru</a>
                         </div>
                     </div>
-                    <div class="font-base text-black flex md:flex-col w-full sm:w-auto justify-start">
-                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm p-2">
+                    <div class="font-base text-black flex flex-col w-full sm:w-auto justify-start">
+                        <div class="flex flex-col justify-end items-start lg:items-center flex-wrap text-base text-sm pr-2 py-2">
                             <div class="font-light font-bold">По вопросам PR:</div>
-                            <a href="mailto:info.dooh.ru" class="font-normal font-bold">info.dooh.ru</a>
+                            <a href="mailto:info.dooh.ru" class="font-normal font-bold hover-content">info@dooh.ru</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-<script type="text/javascript" src="main.js?0709f0521751d17b078d"></script></body>
+<script type="text/javascript" src="main.js?3db822b7b5b715a4cead"></script></body>
 
 </html>
 
-<!-- <img class="header-logo w-full h-auto" src='images/989f481ff516ff1c9745187801eace7a.png' /> --4
+<!-- <img class=" w-full h-auto" src='images/989f481ff516ff1c9745187801eace7a.png' /> --4
